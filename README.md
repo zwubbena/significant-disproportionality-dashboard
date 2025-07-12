@@ -39,7 +39,7 @@ The script expects the following file structure:
 └── CleanData\                    # Output directory (local)
 ```
 > [!WARNING]
-> User humans must ensure that no student-level information is included in the data. When aggregating student-level data to the district level, users must apply masking to any count less than five to protect student privacy and comply with the Family Educational Rights and Privacy Act (FERPA).
+> User humans must ensure that no student-level information is included in the data. When aggregating student-level data to the district level, users must apply masking (e.g., using an asterisk “*”) to any count less than five to protect student privacy and comply with the Family Educational Rights and Privacy Act (FERPA).
 
 ## Data Dictionaries
 
