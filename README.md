@@ -38,7 +38,8 @@ The script expects the following file structure:
 │   └── Current_Districts.shp     # Traditional district boundaries
 └── CleanData\                    # Output directory (local)
 ```
-### **Data Privacy**: User humans must ensure that no student-level information is included in the data. When aggregating student-level data to the district level, users must apply masking to any count less than five to protect student privacy and comply with the Family Educational Rights and Privacy Act (FERPA).
+> [!WARNING]
+> User humans must ensure that no student-level information is included in the data. When aggregating student-level data to the district level, users must apply masking to any count less than five to protect student privacy and comply with the Family Educational Rights and Privacy Act (FERPA).
 
 ## Data Dictionaries
 
