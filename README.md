@@ -4,7 +4,7 @@ A Python script for processing state education agency (SEA) significant dispropo
 
 ## Overview
 
-This script processes SD data to create interactive geospatial layers showing SD indicators across school districts within a specified geographical space. It handles both traditional districts (with boundary shapefiles) and charter schools (with lat/long coordinates) to provide comprehensive statewide coverage.
+This script processes SD data to create interactive geospatial layers showing SD indicators across school districts. It handles both traditional districts (with boundary shapefiles) and charter schools (with lat/long coordinates) to provide comprehensive statewide visualization coverage.
 
 ## Features
 
