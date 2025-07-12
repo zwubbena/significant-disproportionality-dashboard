@@ -19,7 +19,7 @@ This script processes significant disproportionality data to create interactive 
 ### Software
 
 - ArcGIS Pro (Compatible with: ArcGIS Pro 3.x)
-- Python environment with the following packages:
+- Python environment with the packages:
   - `arcpy` (ArcGIS Python library)
   - `pandas`
   - `numpy`
