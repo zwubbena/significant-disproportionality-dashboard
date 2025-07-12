@@ -1,17 +1,17 @@
 # Significant Disproportionality (SD) Geospatial Dashboard
 
-A Python script for processing state education agency (SEA) significant disproportionality data and creating geospatial visualizations in ArcGIS Pro.
+A Python script for processing state education agency (SEA) significant disproportionality (SD) data and creating geospatial visualizations in ArcGIS Pro.
 
 ## Overview
 
-This script processes significant disproportionality data to create interactive geospatial layers showing SD indicators across school districts. It handles both traditional districts (with boundary shapefiles) and charter schools (with lat/long coordinates) to provide comprehensive statewide coverage.
+This script processes SD data to create interactive geospatial layers showing SD indicators across school districts. It handles both traditional districts (with boundary shapefiles) and charter schools (with lat/long coordinates) to provide comprehensive statewide coverage.
 
 ## Features
 
-- **Data Processing**: Cleans and standardizes state education agency (SEA) SD data with demographic information
+- **Data Processing**: Cleans and standardizes SEA SD data with demographic information
 - **Geospatial Mapping**: Creates ArcGIS layers for traditional districts and charter schools
 - **Multiple Indicators**: Supports discipline, representation, and placement SD categories
-- **Multi-Year Analysis**: Processes data across multiple school years
+- **Multi-Year Analysis**: Processes cluster reported data across multiple school years
 - **Demographic Breakdown**: Analyzes SD patterns by race/ethnicity
 
 ## Requirements
@@ -38,6 +38,7 @@ The script expects the following file structure:
 │   └── Current_Districts.shp     # Traditional district boundaries
 └── CleanData\                    # Output directory (local)
 ```
+### **Data Privacy**: User humans must ensure that no student-level information is included in the data. When aggregating student-level data to the district level, users must apply masking to any count less than five to protect student privacy and comply with the Family Educational Rights and Privacy Act (FERPA).
 
 ## Data Dictionaries
 
@@ -84,7 +85,7 @@ The script expects the following file structure:
 
 ```python
 # The script will automatically:
-# 1. Load and clean state education agency (SEA) data
+# 1. Load and clean SEA data
 # 2. Process demographics and SD indicators
 # 3. Create geospatial layers
 # 4. Apply symbology
@@ -100,8 +101,8 @@ The script expects the following file structure:
 
 ### ArcGIS Layers
 
-- `Layer_All_SDs_merge`: All traditional districts with SD findings
-- `Layer_All_Charters`: Charter schools with SD findings
+- `Layer_All_SDs_merge`: All traditional districts with SD designations
+- `Layer_All_Charters`: Charter schools with SD designations
 - `Current_Districts`: District boundary outlines
 
 ## Important Notes
@@ -124,7 +125,7 @@ print(df_charter.loc[df_charter.Lat.isna()==True])
 
 ### File Dependencies
 
-- Script requires specific CSV column structure from state education agency (SEA) data exports
+- Script requires specific CSV column structure from SEA data exports
 - Shapefile must contain `DISTRICT_N` field matching district codes
 - Lat/long file format: skip 6 rows, columns 2-4 contain ID, Lat, Long
 
