@@ -18,7 +18,7 @@ This script processes significant disproportionality data to create interactive 
 
 ### Software
 
-- ArcGIS Pro with Python environment
+- ArcGIS Pro (Compatible with: ArcGIS Pro 3.x) with Python environment
 - Python packages:
   - `arcpy` (ArcGIS Python library)
   - `pandas`
@@ -152,5 +152,3 @@ print(df_charter.loc[df_charter.Lat.isna()==True])
 -----
 
 *Last Updated: July 12, 2025*
-
-*Compatible with: ArcGIS Pro 3.x*
