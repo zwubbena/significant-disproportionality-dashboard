@@ -30,7 +30,7 @@ This script processes significant disproportionality data to create interactive 
 The script expects the following file structure:
 
 ```
-\\tsclient\H\share\GIS Methods Group\Dashboard\
+\\your-file-path\Significant_Disproportionality\Dashboard\
 ├── RawData\
 │   ├── Education_Data.csv        # Main education SD data
 │   └── DistLatLong.csv          # Charter district coordinates
